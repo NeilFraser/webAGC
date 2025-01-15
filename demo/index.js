@@ -11,12 +11,12 @@ function getBrowserInfo() {
   };
   let matches;
 
-  matches = navigator.userAgent.match(/(Chrome)\/(\d\d)/);
+  matches = navigator.userAgent.match(/(Chrome)\/(\d\d+)/);
   if (matches) {
     result.name = matches[1];
     result.version = parseInt(matches[2]);
   }
-  matches = navigator.userAgent.match(/(Firefox)\/(\d\d)/);
+  matches = navigator.userAgent.match(/(Firefox)\/(\d\d+)/);
   if (matches) {
     result.name = matches[1];
     result.version = parseInt(matches[2]);
